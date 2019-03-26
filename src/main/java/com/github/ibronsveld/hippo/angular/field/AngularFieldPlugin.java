@@ -17,6 +17,7 @@ package com.github.ibronsveld.hippo.angular.field;
 
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.model.StringResourceModel;
 import org.hippoecm.frontend.editor.plugins.field.FieldPluginHelper;
 import org.hippoecm.frontend.editor.plugins.fieldhint.FieldHint;
@@ -30,7 +31,7 @@ public class AngularFieldPlugin extends AbstractAngularFieldPlugin {
     public AngularFieldPlugin(final IPluginContext context, IPluginConfig config) {
         super(context, config);
 
-        add(new Label("angularfield-caption", new Model(this.getPluginConfig().getString("caption", "Asset"))));
+        add(new Label("angularfield-caption", new Model<>(this.getPluginConfig().getString("caption", "Asset"))));
 
         FieldPluginHelper helper = new FieldPluginHelper(context,config);
         final Label required = new Label("required", "*");
