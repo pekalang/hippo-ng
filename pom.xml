@@ -17,9 +17,9 @@
         <project.build.javaVersion>1.7</project.build.javaVersion>
 
         <jcr.version>2.0</jcr.version>
-        <hippo.repository.version>5.6.0</hippo.repository.version>
-        <hippo.cms.version>5.6.0</hippo.cms.version>
-        <hippo.cms.ckeditor.version>5.6.0</hippo.cms.ckeditor.version>
+        <hippo.repository.version>13.0.0</hippo.repository.version>
+        <hippo.cms.version>13.0.0</hippo.cms.version>
+        <hippo.cms.ckeditor.version>13.0.0</hippo.cms.ckeditor.version>
 
         <commons-lang.version>2.6</commons-lang.version>
         <commons-collections.version>3.2.1</commons-collections.version>

@@ -44,7 +44,7 @@ public class AngularFieldPlugin extends AbstractAngularFieldPlugin {
             }
         }
 
-        add(new FieldHint("hint-panel", helper.getHintModel(this).getObject()));
+        add(new FieldHint("hint-panel", helper.getHintModel(this)));
     }
 
     /*protected IModel<String> getCaptionModel() {

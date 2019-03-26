@@ -24,12 +24,12 @@ public class AngularEnabledCKEditorNodePlugin extends CKEditorNodePlugin {
 
 
     @Override
-    public void renderHead(HtmlHeaderContainer container) {
-        super.renderHead(container);
+    public void renderHead(IHeaderResponse response) {
+        super.renderHead(response);
 
-        AngularPluginUtils.renderAngular(container.getHeaderResponse());
-        AngularPluginUtils.renderAngularMaterial(container.getHeaderResponse());
+        AngularPluginUtils.renderAngular(response);
+        AngularPluginUtils.renderAngularMaterial(response);
 
-        AngularPluginUtils.renderPluginScripts(pluginContext, container.getHeaderResponse());
+        AngularPluginUtils.renderPluginScripts(pluginContext, response);
     }
 }
