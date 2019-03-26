@@ -34,7 +34,7 @@ public class AngularFieldPlugin extends AbstractAngularFieldPlugin {
         add(new Label("angularfield-caption", new Model<>(this.getPluginConfig().getString("caption", "Asset"))));
 
         FieldPluginHelper helper = new FieldPluginHelper(context,config);
-        final Label required = new Label("required", "*");
+        final Label required = new Label("required", Model.of("*"));
         add(required);
 
         final IFieldDescriptor field = helper.getField();
