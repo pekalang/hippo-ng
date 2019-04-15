@@ -32,19 +32,7 @@ public class AngularFieldPlugin extends AbstractAngularFieldPlugin {
         super(context, config);
 
         add(new Label("angularfield-caption", new Model<>(this.getPluginConfig().getString("caption", "Asset"))));
-
-        FieldPluginHelper helper = new FieldPluginHelper(context,config);
-        final Label required = new Label("required", Model.of("*"));
-        add(required);
-
-        final IFieldDescriptor field = helper.getField();
-        if (field != null) {
-            if (!field.getValidators().contains("required")) {
-                required.setVisible(false);
-            }
-        }
-
-        add(new FieldHint("hint-panel", helper.getHintModel(this)));
+        add(new Label("angularfield-hint", new Model<>(this.getPluginConfig().getString("hint", "Pick an asset from an external DAM system"))));
     }
 
     /*protected IModel<String> getCaptionModel() {
