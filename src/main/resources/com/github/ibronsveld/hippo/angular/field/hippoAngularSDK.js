@@ -262,10 +262,6 @@ function pluginResponse(response) {
   }
 }
 
-pluginResponse.prototype.getUsername = function () {
-  return this.data['userName'];
-}
-
 pluginResponse.prototype.getFirstResult = function () {
   return this.getResult(0);
 }

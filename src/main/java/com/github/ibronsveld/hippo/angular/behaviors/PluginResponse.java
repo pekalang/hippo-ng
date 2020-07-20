@@ -8,12 +8,10 @@ import org.hippoecm.frontend.session.UserSession;
 public class PluginResponse {
 
     protected String responseBody;
-    protected String userName;
     protected int resultCode;
 
     public PluginResponse() {
         resultCode = 200;
-        this.userName = UserSession.get().getJcrSession().getUserID();
     }
 
     public void addResponseBody(String contents) {
@@ -34,10 +32,6 @@ public class PluginResponse {
 
     public String getResponseBody() {
         return responseBody;
-    }
-
-    public String getUserName() {
-        return userName;
     }
 
     public int getResultCode() {
