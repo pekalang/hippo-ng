@@ -32,7 +32,7 @@ public class AngularFieldPlugin extends AbstractAngularFieldPlugin {
         super(context, config);
 
         add(new Label("angularfield-caption", new Model<>(this.getPluginConfig().getString("caption", "Asset"))));
-        add(new Label("angularfield-hint", new Model<>(this.getPluginConfig().getString("hint", "Pick an asset from an external DAM system"))));
+        //add(new Label("angularfield-hint", new Model<>(this.getPluginConfig().getString("hint", "Pick an asset from an external DAM system"))));
     }
 
     /*protected IModel<String> getCaptionModel() {
